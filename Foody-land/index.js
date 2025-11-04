@@ -348,7 +348,7 @@ function createCard(recipe) {
   infoBtn.addEventListener("click", (e) => {
     e.stopPropagation(); // prevent modal from opening
     localStorage.setItem("selectedRecipe", JSON.stringify(recipe));
-    window.open("../html/info.html", "_blank"); // opens new tab
+    window.open("info.html"); // opens new tab
   });
 
   // Click anywhere else → open modal
