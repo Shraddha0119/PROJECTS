@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Recipe Information</h1>
+    
+</body>
+<script>
+
+const modal = document.getElementById("modal");
+const modalTitle = document.getElementById("modalTitle");
+const modalBody = document.getElementById("modalBody");
+const closeModal = document.getElementById("closeModal");
+
+
+
+
+function renderRecipes(list) {
+  recipesContainer.innerHTML = "";
+  if (list.length === 0) {
+    noResults.hidden = false;
+    return;
+  }
+  noResults.hidden = true;
+  list.forEach((r) => recipesContainer.appendChild(createCard(r)));
+}
+
+function openModal(recipe) {
+  modalTitle.textContent = recipe.title;
+
+  const ingredientsHTML = recipe.ingredients
+    ? `<h4>Ingredients</h4><ul>${recipe.ingredients
+        .map((i) => `<li>${i}</li>`)
+        .join("")}</ul>`
+    : "";
+
+  modalBody.innerHTML = `
+    <img src="${recipe.thumb}" alt="${recipe.title}" style="width:100%; border-radius:8px; margin-bottom:10px;">
+    ${ingredientsHTML}
+    <h4>Instructions</h4>
+    <p>${recipe.instructions}</p>
+  `;
+
+  modal.setAttribute("aria-hidden", "false");
+}
+
+
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sweets Recipe Finder </title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <div><a href="index.html">home page</a>
+        <a href="info.html">Information page</a>
+    </div>
+        
+    </nav>
+
+    <h1>🍰 World's Sweets Collection</h1>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search recipes (Sweets...)">
+      <button id="searchBtn">Search</button>
+    </div>
+  
+
+  <main>
+    <section class="recipes" id="recipesContainer">
+
+    </section>
+
+    <div id="noResults" class="no-results" hidden>
+      <p>No recipes found — try another keyword 😊</p>
+    </div>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button id="closeModal" class="close">Remove</button>
+      <h3 id="modalTitle"></h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer>
+    <small>Built with ❤️ — Demo recipes with shraddha.</small>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
