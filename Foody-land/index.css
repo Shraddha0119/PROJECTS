@@ -5,6 +5,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+nav{
+  width: 100%;
+  height: 40px;
+  background-color: #dd2476;
+  align-items: center;
+  display: flex;
+  justify-content:space-around;
+  color: #333;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -128,14 +137,14 @@ footer {
     background-color: rgb(237, 96, 96);
     font-weight: bold;
 }
-nav>div{
+/* nav>div{
     width:200vh;
     height: 40px;
     display: flex;
     justify-content:space-around;
     background-color: #dd2476;
     color: #333;
-}
+} */
 .info-btn{
 width: 100px;
 height: 25px;
