@@ -5,7 +5,7 @@ nav{
             display: flex;
             justify-content: space-around;
             align-items: center;
-            background-color: darkmagenta;
+            background-color: rgb(220, 53, 220);
             color: white;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
