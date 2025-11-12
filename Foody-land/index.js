@@ -198,7 +198,7 @@ const DEMO_RECIPES = [
     area: "Spain",
     thumb: "https://cremefilledchurros.com/wp-content/uploads/2024/04/Ice-Cream-Churro-Sandwiches-500x500.webp",
     instructions:
-      "Prepare churro dough, pipe into round shapes, and fry until golden. Roll in cinnamon sugar. Sandwich ice cream between two churros and serve immediately.",
+      "Prepare churro dough, pipe into round shapes, and fry until golden.<br> Roll in cinnamon sugar. Sandwich ice cream between two churros and serve immediately.",
     ingredients: [
       "1 cup water",
       "2 tbsp butter",
@@ -350,6 +350,8 @@ function createCard(recipe) {
     localStorage.setItem("selectedRecipe", JSON.stringify(recipe));
     window.open("info.html"); // opens new tab
   });
+
+  
 
   // Click anywhere else → open modal
   card.addEventListener("click", () => openModal(recipe));

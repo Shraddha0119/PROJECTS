@@ -155,7 +155,13 @@ background-color: rgb(225, 111, 107);
 #modalTitle{
   text-align: center;
 }
-#modalBody{
-  width:80vh;
+#modalBody img {
+  width: 100%;            /* makes image take full width of modal */
+  max-width: 500px;       /* optional: limit max width */
+  height: 300px;          /* fixed height for all images */
+  object-fit: cover;      /* keeps proportions, crops extra */
+  display: block;
+  margin: 0 auto;         /* center image */
+  border-radius: 10px;
 }
 
