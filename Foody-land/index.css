@@ -136,6 +136,7 @@ footer {
     width: 100px;
     background-color: rgb(237, 96, 96);
     font-weight: bold;
+    
 }
 /* nav>div{
     width:200vh;
@@ -154,9 +155,7 @@ background-color: rgb(225, 111, 107);
 #modalTitle{
   text-align: center;
 }
-
 #modalBody{
-
-width:60vw;
-margin-left:10vw;
+  width:80vh;
 }
+
