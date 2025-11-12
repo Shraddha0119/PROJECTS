@@ -363,8 +363,6 @@ function createCard(recipe) {
 // 88888888
 
 
-
-
 function renderRecipes(list) {
   recipesContainer.innerHTML = "";
   if (list.length === 0) {

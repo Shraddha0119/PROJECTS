@@ -150,3 +150,13 @@ width: 100px;
 height: 25px;
 background-color: rgb(225, 111, 107);
 }
+
+#modalTitle{
+  text-align: center;
+}
+
+#modalBody{
+
+width:60vw;
+margin-left:10vw;
+}
