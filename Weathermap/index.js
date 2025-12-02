@@ -33,13 +33,6 @@ let main = document.querySelector("#main")
                     <h2>${temp}</h2>
                    <iframe src="https://maps.google.com/maps?&hl=en&q=${name}&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe>
                      `
-
-
-
-              
-
-          
-    
     
  }
 
