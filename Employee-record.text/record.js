@@ -76,4 +76,6 @@ function getdata(){
 
     })
 }
+
+
 // js ends//
