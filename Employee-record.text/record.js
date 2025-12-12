@@ -75,7 +75,7 @@ function getdata(){
         tbody.append(row)
 
     })
+
+ 
 }
-
-
 // js ends//
