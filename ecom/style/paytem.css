@@ -1,0 +1,63 @@
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f3f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .payment-container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      width: 350px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: #4285F4; /* GPay blue */
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    h1 img {
+      width: 40px;
+      height: 40px;
+    }
+
+    input[type="text"], input[type="number"] {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 12px 25px;
+      background-color: #4285F4;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #3367d6;
+    }
+
+    .success-message {
+      color: green;
+      font-weight: bold;
+      margin-top: 15px;
+      display: none;
+    }

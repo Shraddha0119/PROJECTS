@@ -37,7 +37,7 @@ if(username != null){
 // ******
 
  let paybtn = document.createElement("button");
-  paybtn.innerText = "PhonePe 💰";
+  paybtn.innerText = "paymony 💰";
   paybtn.addEventListener("click", function () {
     window.location.href = "../html/pay.html";
   });

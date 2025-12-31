@@ -1,13 +1,6 @@
 
-
-
 let username=localStorage.getItem("login_data");
 let main=document.getElementById("main")
-
-
-
-
-
 
 let navbar=document.getElementById("navbar")
 
