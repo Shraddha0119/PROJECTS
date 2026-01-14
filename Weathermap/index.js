@@ -3,6 +3,8 @@ let api ="https://api.openweathermap.org/data/2.5/weather";
 
 
 
+
+
 // ?q={buldhana}&appid=232f0bd383dc23f5ded51b0ea8ae959d&units=metric
 
 let input = document.querySelector("input")
