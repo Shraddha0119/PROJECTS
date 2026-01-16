@@ -97,10 +97,20 @@ p{
     left: 75%;
 }
 
-.img:nth-child(2)
+.img:nth-child(2),
 .img:nth-child(4){
     left: 25%;
+
 }
+
+.img-gallery-container.order {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
 img.reorder{
     position: absolute;
     top:47.5%;

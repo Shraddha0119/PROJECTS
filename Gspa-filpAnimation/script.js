@@ -25,6 +25,34 @@ function applyRotation(){
     });
 }
 
-document.querySelector(".btn").addEventListener
+document.querySelector(".btn").addEventListener("click",()=>{
+    isFlipped = !isFlipped;
 
-// 9.4//
+
+
+setTimeout(()=>{
+    document.querySelector(".btn").textContent = isFlipped
+    ? "Hide All Ideas"
+    : "Explores Ideas";
+},1000);
+
+let state = Flip.getState(".img-gallery-container,.img");
+gallery.classList.toggle("order");
+images.forEach((img)=>img.classList.toggle("reorder"));
+
+Flip.from(state,{
+    absolute:true,
+    duration:2,
+    rotate:0,
+    stagger:0.05,
+    ease:"cubic",
+    onStart:() =>{
+        applyRotation();
+    },
+    onComplete:()=>{
+        scroller.update();
+    }
+})
+
+});
+
