@@ -66,10 +66,15 @@ function getdata(){
             role.innerText="unexpirenced"
         }
 
-        let del=document.createElement("td")
-        del.innerText="delete";
-        del.style.backgroundColor="red";
-        del.style.color="white"
+       let del = document.createElement("td");
+       del.innerText = "Delete";
+       del.style.backgroundColor = "red";
+       del.style.color = "white";
+
+       // Add click functionality
+       del.addEventListener("click", function () {
+       this.parentElement.remove(); // removes the row
+      });
 
         row.append(Empname,Empid,depart,expirence,email,mobile,role,del)
         tbody.append(row)
