@@ -10,7 +10,7 @@ const NotFound = () => {
         <img src='/notFound.svg' alt='notfound'/>
         <h1>LOOKS LIKE YOU'RE LOSS</h1>
         <p>we cant seem to find you the page you're looking for</p>
-        <Link to={'/'}>Back to Home
+        <Link to={'/'}>Back to Home{""}
          <span>
           <HiOutlineArrowNarrowRight/>
          </span>
