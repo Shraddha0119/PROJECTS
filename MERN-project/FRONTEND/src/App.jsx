@@ -6,7 +6,6 @@ import NotFound from "./Pages/NotFound";
 import Success from "./Pages/Success";
 
 const App = () => {
-  
   return (
   <Router>
     <Routes>
